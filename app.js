@@ -25,7 +25,7 @@ console.log(`areaOfTriangle(6, 56) === 168 : ${areaOfTriangle(6, 56) === 168}`);
 // 3. lessThan100
 // Given 2 numbers, return true if their sum is less than 100
 // return false if it is greater than 100
-function lessThan100(num1 , num2) {
+function lessThan100(num1, num2) {
     if (num1 + num2 < 100) {
         return true;
     } else {
@@ -73,7 +73,7 @@ function daysInMonth(month, year = '2022') {
         } else {
             return daysPerMonth[month - 1];
         }
-    } else{
+    } else {
         console.log('Value is not between 1 and 12. Please enter a value between 1 and 12');
     }
 }
