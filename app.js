@@ -16,9 +16,11 @@ console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 // Write a function called areaOfTriangle that takes in the base and height
 // of a triangle and returns its area
 function areaOfTriangle(base, height) {
-    return areaOfTriangle = base + height*2;
+    return 0.5 * base * height;
 }
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
+console.log(`areaOfTriangle(2, 10) === 10 : ${areaOfTriangle(2, 10) === 10}`);
+console.log(`areaOfTriangle(6, 56) === 168 : ${areaOfTriangle(6, 56) ===168}`);
 
 // 3. lessThan100
 // Given 2 numbers, return true if their sum is less than 100
@@ -39,11 +41,7 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // and a third parameter called middle_name which is optional.
 // The function should return a string with the first, middle and last names
 function getFormattedName(first_name, last_name, middle_name = '') {
-    if (middle_name === '') {
-        return `${first_name} ${last_name}`; 
-    } else {
-        return `${first_name} ${middle_name} ${last_name}`;
-    }
+    return middle_name === '' ? `${first_name} ${last_name}` : `${first_name} ${middle_name} ${last_name}`;
 }
 console.log(
     `getFormattedName('Ruth', 'Ginsburg') === 'Ruth Ginsburg': ${
@@ -68,7 +66,7 @@ console.log(
 //    the current year
 let daysPerMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 let daysPerMonthLeapYear = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-function daysInMonth(month, year = '2020') {
+function daysInMonth(month, year = '2022') {
     if (month >= 1 && month <= 12) {
         if (year % 4 === 0) {
             return daysPerMonthLeapYear[month - 1];
