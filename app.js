@@ -20,7 +20,7 @@ function areaOfTriangle(base, height) {
 }
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 console.log(`areaOfTriangle(2, 10) === 10 : ${areaOfTriangle(2, 10) === 10}`);
-console.log(`areaOfTriangle(6, 56) === 168 : ${areaOfTriangle(6, 56) ===168}`);
+console.log(`areaOfTriangle(6, 56) === 168 : ${areaOfTriangle(6, 56) === 168}`);
 
 // 3. lessThan100
 // Given 2 numbers, return true if their sum is less than 100
@@ -28,7 +28,7 @@ console.log(`areaOfTriangle(6, 56) === 168 : ${areaOfTriangle(6, 56) ===168}`);
 function lessThan100(num1 , num2) {
     if (num1 + num2 < 100) {
         return true;
-    }else {
+    } else {
         return false;
     }
 }
