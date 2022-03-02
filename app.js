@@ -66,7 +66,7 @@ console.log(
 //    the current year
 let daysPerMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 let daysPerMonthLeapYear = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-function daysInMonth(month, year = '2022') {
+function daysInMonth(month, year = '2020') {
     if (month >= 1 && month <= 12) {
         if (year % 4 === 0) {
             return daysPerMonthLeapYear[month - 1];
